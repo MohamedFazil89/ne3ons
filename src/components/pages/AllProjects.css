@@ -1,0 +1,57 @@
+.all-projects-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-bg);
+}
+
+.all-projects-main {
+    flex: 1;
+    padding-top: 120px;
+    /* Accounts for fixed navbar */
+    padding-bottom: var(--spacing-4xl);
+}
+
+.all-projects-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto var(--spacing-4xl);
+}
+
+.page-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+}
+
+.page-description {
+    color: var(--gray-light);
+    font-size: var(--font-size-lg);
+    line-height: 1.6;
+}
+
+.all-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-2xl);
+}
+
+/* Make cards fit well in the grid */
+.all-projects-grid .project-card {
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .all-projects-main {
+        padding-top: 100px;
+    }
+
+    .all-projects-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+}
