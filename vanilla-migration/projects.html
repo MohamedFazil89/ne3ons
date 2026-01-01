@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects - ne3ion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo-wrapper">
+                <div class="loading-ring"></div>
+                <img src="assets/nu3ons_logo.png" alt="nu3ons" class="loading-logo" />
+            </div>
+
+            <div class="loading-text-container">
+                <div class="loading-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <span class="loading-status-text">INITIALIZING...</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="app-content">
+        <!-- Navbar -->
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <!-- Logo -->
+                    <a href="index.html" class="navbar-logo">
+                        <div class="logo-icon"><img src="assets/nu3ons_logo.png" alt="Logo" class="logo" /></div>
+                        <span class="logo-text">nu3ons</span>
+                    </a>
+
+                    <!-- Desktop Menu -->
+                    <ul class="navbar-menu desktop-menu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="index.html#services" class="nav-link">Services</a></li>
+                        <li><a href="projects.html" class="nav-link">Work</a></li>
+                    </ul>
+
+                    <!-- CTA Button -->
+                    <div class="navbar-cta desktop-cta">
+                        <button class="btn btn-primary btn-medium">Contact Us</button>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Overlay -->
+                <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+                <!-- Mobile Menu Sidebar -->
+                <div class="mobile-menu" id="mobile-menu">
+                    <div class="mobile-menu-header">
+                        <a href="index.html" class="navbar-logo">
+                            <div class="logo-icon"><img src="assets/nu3ons_logo.png" alt="Logo" class="logo" /></div>
+                            <span class="logo-text">nu3ons</span>
+                        </a>
+                        <button class="mobile-menu-close" id="mobile-menu-close">
+                            <i data-feather="x"></i>
+                        </button>
+                    </div>
+
+                    <ul class="mobile-menu-list">
+                        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                        <li><a href="index.html#services" class="mobile-nav-link">Services</a></li>
+                        <li><a href="projects.html" class="mobile-nav-link">Work</a></li>
+                    </ul>
+                    <div class="mobile-menu-cta">
+                        <button class="btn btn-primary btn-medium">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="all-projects-page">
+            <main class="all-projects-main">
+                <div class="container">
+                    <div class="all-projects-header">
+                        <span class="section-badge">PORTFOLIO</span>
+                        <h1 class="page-title">All Projects</h1>
+                        <p class="page-description">
+                            Explore our complete portfolio of digital solutions, web platforms, and creative designs.
+                        </p>
+                    </div>
+
+                    <div class="all-projects-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-image"
+                                style="background: linear-gradient(135deg, #0a4d4d 0%, #1a5f5f 100%)">
+                                <div class="project-image-overlay"></div>
+                                <img src="assets/apex.png" alt="Apexergo – Modern Ergonomics & Wellness Solutions" />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">WEB PLATFORM</span>
+                                <h3 class="project-title">Apexergo – Modern Ergonomics & Wellness Solutions</h3>
+                                <p class="project-description">Ergonomic solutions provider focused on workplace health
+                                    and productivity.</p>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="project-view-btn"
+                                    onclick="window.location.href='https://www.apexergo.ae/'">View Project</button>
+                            </div>
+                        </div>
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <div class="project-image"
+                                style="background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 100%)">
+                                <div class="project-image-overlay"></div>
+                                <img src="assets/suvai.png" alt="Suvaiful Veg Catering" />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">CATERING & EVENTS</span>
+                                <h3 class="project-title">Suvaiful Veg Catering</h3>
+                                <p class="project-description">Pure vegetarian catering services for weddings, corporate
+                                    events, and celebrations.</p>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="project-view-btn"
+                                    onclick="window.location.href='https://suvaiful.in/'">View Project</button>
+                            </div>
+                        </div>
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <div class="project-image"
+                                style="background: linear-gradient(135deg, #c9a87c 0%, #e6d5b8 100%)">
+                                <div class="project-image-overlay"></div>
+                                <img src="assets/cm.png" alt="CM Limra Caterers – Event & Wedding Catering" />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">CATERING & EVENTS</span>
+                                <h3 class="project-title">CM Limra Caterers – Event & Wedding Catering</h3>
+                                <p class="project-description">Full-service catering specialising in weddings, birthdays
+                                    and corporate events.</p>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="project-view-btn"
+                                    onclick="window.location.href='https://cmlimracaterers.com/'">View Project</button>
+                            </div>
+                        </div>
+                        <!-- Project 4 Virtue -->
+                        <div class="project-card">
+                            <div class="project-image"
+                                style="background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%)">
+                                <div class="project-image-overlay"></div>
+                                <img src="assets/viture.png" alt="Virtue Enterprises – Strategic Investment Firm" />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">INVESTMENT & BUSINESS</span>
+                                <h3 class="project-title">Virtue Enterprises – Strategic Investment Firm</h3>
+                                <p class="project-description">Forward-thinking investment company focused on
+                                    sustainable value creation and innovation.</p>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="project-view-btn"
+                                    onclick="window.location.href='https://virtueenterprises.in/'">View Project</button>
+                            </div>
+                        </div>
+                        <!-- Project 5 ChainZoku -->
+                        <div class="project-card">
+                            <div class="project-image"
+                                style="background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%)">
+                                <div class="project-image-overlay"></div>
+                                <img src="assets/chain.png" alt="ChainZoku – Interactive NFT Universe" />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">WEB3 / GAMING</span>
+                                <h3 class="project-title">ChainZoku – Interactive NFT Universe</h3>
+                                <p class="project-description">Web3 project blending anime-style clans, story lore, and
+                                    blockchain collectibles.</p>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="project-view-btn"
+                                    onclick="window.location.href='https://chainzoku.io/'">View Project</button>
+                            </div>
+                        </div>
+                        <!-- Project 6 The Workshop -->
+                        <div class="project-card">
+                            <div class="project-image"
+                                style="background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%)">
+                                <div class="project-image-overlay"></div>
+                                <img src="assets/workshop.png" alt="The Workshop Dubai – Art, Café & Creative Hub" />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">ART & COMMUNITY SPACE</span>
+                                <h3 class="project-title">The Workshop Dubai – Art, Café & Creative Hub</h3>
+                                <p class="project-description">Multi-concept space combining art gallery, café,
+                                    workshops, and design studio in Dubai.</p>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="project-view-btn"
+                                    onclick="window.location.href='https://www.theworkshopdubai.com/'">View
+                                    Project</button>
+                            </div>
+                        </div>
+                        <!-- Project 7 Maya Dubai -->
+                        <div class="project-card">
+                            <div class="project-image"
+                                style="background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%)">
+                                <div class="project-image-overlay"></div>
+                                <img src="assets/mava.png" alt="Maya Dubai – Premium Nightlife & Experiences" />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">LUXURY HOSPITALITY</span>
+                                <h3 class="project-title">Maya Dubai – Premium Nightlife & Experiences</h3>
+                                <p class="project-description">Luxury nightlife and curated experiential spaces blending
+                                    music, design, and events.</p>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="project-view-btn"
+                                    onclick="window.location.href='https://www.maya-dubai.com/?gad_source=1'">View
+                                    Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <!-- Logo and Description -->
+                        <div class="footer-section">
+                            <a href="index.html" class="footer-logo">
+                                <div class="logo-icon"><img src="assets/nu3ons_logo.png" alt="Logo" class="logo" />
+                                </div>
+                                <span class="logo-text">nu3ons</span>
+                            </a>
+                            <p class="footer-description">
+                                Digital transformation agency helping businesses scale through innovative web solutions.
+                            </p>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div class="footer-section">
+                            <h4 class="footer-title">Quick Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.html#services">Services</a></li>
+                                <li><a href="projects.html">Work</a></li>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Services -->
+                        <div class="footer-section">
+                            <h4 class="footer-title">Services</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">Web Development</a></li>
+                                <li><a href="#">App Development</a></li>
+                                <li><a href="#">Automation</a></li>
+                                <li><a href="#">Consulting</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="footer-section">
+                            <h4 class="footer-title">Contact</h4>
+                            <ul class="footer-contact">
+                                <li>
+                                    <a href="tel:+917356926820">+91 735-6926-820</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+918769803978">+91 876-980-3978</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:nu3ons@gmail.com">nu3ons@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 nu3ons. All rights reserved.</p>
+                        <div class="footer-bottom-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

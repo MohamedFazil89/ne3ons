@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ne3ion - Digital Transformation Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo-wrapper">
+                <div class="loading-ring"></div>
+                <img src="assets/nu3ons_logo.png" alt="nu3ons" class="loading-logo" />
+            </div>
+
+            <div class="loading-text-container">
+                <div class="loading-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <span class="loading-status-text">INITIALIZING...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="app-content">
+        <!-- Navbar -->
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <!-- Logo -->
+                    <a href="index.html" class="navbar-logo">
+                        <div class="logo-icon"><img src="assets/nu3ons_logo.png" alt="Logo" class="logo" /></div>
+                        <span class="logo-text">nu3ons</span>
+                    </a>
+
+                    <!-- Desktop Menu -->
+                    <ul class="navbar-menu desktop-menu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="projects.html" class="nav-link">Work</a></li>
+                    </ul>
+
+                    <!-- CTA Button -->
+                    <div class="navbar-cta desktop-cta">
+                        <button class="btn btn-primary btn-medium">Contact Us</button>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Overlay -->
+                <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+                <!-- Mobile Menu Sidebar -->
+                <div class="mobile-menu" id="mobile-menu">
+                    <div class="mobile-menu-header">
+                        <a href="index.html" class="navbar-logo">
+                            <div class="logo-icon"><img src="assets/nu3ons_logo.png" alt="Logo" class="logo" /></div>
+                            <span class="logo-text">nu3ons</span>
+                        </a>
+                        <button class="mobile-menu-close" id="mobile-menu-close">
+                            <i data-feather="x"></i>
+                        </button>
+                    </div>
+
+                    <ul class="mobile-menu-list">
+                        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+                        <li><a href="projects.html" class="mobile-nav-link">Work</a></li>
+                    </ul>
+                    <div class="mobile-menu-cta">
+                        <button class="btn btn-primary btn-medium">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-background">
+                    <div class="gradient-orb orb-1"></div>
+                    <div class="gradient-orb orb-2"></div>
+                    <div class="gradient-orb orb-3"></div>
+                </div>
+
+                <div class="container">
+                    <div class="hero-content">
+                        <!-- Left Content -->
+                        <div class="hero-left">
+                            <div class="hero-badge">
+                                DIGITAL TRANSFORMATION AGENCY
+                            </div>
+
+                            <h1 class="hero-title">
+                                We Build The <br />
+                                <span class="gradient-text">Future of Web</span>
+                            </h1>
+
+                            <p class="hero-description">
+                                Innovative website and application development tailored to elevate your business. We turn complex problems into elegant digital solutions.
+                            </p>
+
+                            <div class="hero-cta">
+                                <button class="btn btn-primary btn-large">
+                                    Call Us Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right Content - Code Editor -->
+                        <div class="hero-right">
+                            <div class="code-editor">
+                                <div class="code-editor-header">
+                                    <div class="code-dots">
+                                        <span class="dot dot-red"></span>
+                                        <span class="dot dot-yellow"></span>
+                                        <span class="dot dot-green"></span>
+                                    </div>
+                                    <span class="code-title">index.js</span>
+                                </div>
+
+                                <div class="code-editor-body">
+                                    <pre class="code-content"><code id="typed-code"></code></pre>
+                                </div>
+
+                                <div class="code-status">
+                                    <div class="status-indicator">
+                                        <i data-feather="check" class="status-icon"></i>
+                                        <span>100% Optimized</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Expertise Section -->
+            <section class="expertise-section" id="services">
+                <div class="container">
+                    <div class="expertise-header">
+                        <span class="section-badge">WHAT WE DO</span>
+                        <h2 class="section-title">Expertise Driven by Innovation</h2>
+                        <p class="section-description">
+                            We don't just write code; we re-create experiences and automate processes to help your business scale effortlessly.
+                        </p>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-feather="monitor"></i>
+                            </div>
+                            <h3 class="service-title">Website Development</h3>
+                            <p class="service-description">Custom, responsive web solutions from landing pages to complex enterprise portals, with code you can trust.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-feather="smartphone"></i>
+                            </div>
+                            <h3 class="service-title">App Development</h3>
+                            <p class="service-description">Native and cross-platform mobile applications. We build intuitive apps for iOS and Android that users love to engage with.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i data-feather="zap"></i>
+                            </div>
+                            <h3 class="service-title">Re-create & Automation</h3>
+                            <p class="service-description">Modernize legacy systems and automate repetitive tasks. We breathe new life into old systems and streamline your workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="projects-section">
+                <div class="container">
+                    <div class="projects-header">
+                        <div class="projects-header-left">
+                            <span class="section-badge">OUR PORTFOLIO</span>
+                            <h2 class="section-title">Our Projects</h2>
+                            <p class="section-description">
+                                Discover how we help brands grow through digital transformation. Here are a few of our latest success stories.
+                            </p>
+                        </div>
+
+                        <div class="projects-header-right">
+                            <button onclick="window.location.href='projects.html'" class="view-all-link">
+                                View All Projects
+                                <i data-feather="arrow-right" class="arrow-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="projects-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-image" style="background: linear-gradient(135deg, #0a4d4d 0%, #1a5f5f 100%)">
+                                <div class="project-image-overlay"></div>
+                                <img src="assets/apex.png" alt="Apexergo – Modern Ergonomics & Wellness Solutions" />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">WEB PLATFORM</span>
+                                <h3 class="project-title">Apexergo – Modern Ergonomics & Wellness Solutions</h3>
+                                <p class="project-description">Ergonomic solutions provider focused on workplace health and productivity.</p>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="project-view-btn" onclick="window.location.href='https://www.apexergo.ae/'">View Project</button>
+                            </div>
+                        </div>
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <div class="project-image" style="background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 100%)">
+                                <div class="project-image-overlay"></div>
+                                <img src="assets/suvai.png" alt="Suvaiful Veg Catering" />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">CATERING & EVENTS</span>
+                                <h3 class="project-title">Suvaiful Veg Catering</h3>
+                                <p class="project-description">Pure vegetarian catering services for weddings, corporate events, and celebrations.</p>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="project-view-btn" onclick="window.location.href='https://suvaiful.in/'">View Project</button>
+                            </div>
+                        </div>
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <div class="project-image" style="background: linear-gradient(135deg, #c9a87c 0%, #e6d5b8 100%)">
+                                <div class="project-image-overlay"></div>
+                                <img src="assets/cm.png" alt="CM Limra Caterers – Event & Wedding Catering" />
+                            </div>
+                            <div class="project-content">
+                                <span class="project-category">CATERING & EVENTS</span>
+                                <h3 class="project-title">CM Limra Caterers – Event & Wedding Catering</h3>
+                                <p class="project-description">Full-service catering specialising in weddings, birthdays and corporate events.</p>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="project-view-btn" onclick="window.location.href='https://cmlimracaterers.com/'">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Partner Section -->
+            <section class="why-partner-section">
+                <div class="container">
+                    <div class="why-partner-content">
+                        <!-- Left Content -->
+                        <div class="why-partner-left">
+                            <span class="section-badge">WHY CHOOSE US</span>
+                            <h2 class="section-title">
+                                Why partner with <span class="gradient-text">nu3ons</span>?
+                            </h2>
+
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i data-feather="zap"></i>
+                                    </div>
+                                    <div class="feature-info">
+                                        <h4 class="feature-title">Lightning Fast Delivery</h4>
+                                        <p class="feature-description">We value your time. Our agile development process ensures quick turnarounds without compromising quality.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i data-feather="cpu"></i>
+                                    </div>
+                                    <div class="feature-info">
+                                        <h4 class="feature-title">Creative Problem Solving</h4>
+                                        <p class="feature-description">We don't just follow instructions; we consult. We find the best technological path for your specific goals.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <i data-feather="headphones"></i>
+                                    </div>
+                                    <div class="feature-info">
+                                        <h4 class="feature-title">Direct Support</h4>
+                                        <p class="feature-description">Talk directly to the developers. No middlemen, no confusion. Clear communication is our priority.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Content -->
+                        <div class="why-partner-right">
+                            <div class="team-image-wrapper">
+                                <div class="team-image-background"></div>
+                                <div class="team-image-placeholder">
+                                    <img src="assets/teamwork.jpg" alt="Team Working" class="team-work-image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section">
+                <div class="contact-background">
+                    <div class="contact-orb orb-1"></div>
+                    <div class="contact-orb orb-2"></div>
+                </div>
+
+                <div class="container">
+                    <div class="contact-content">
+                        <h2 class="contact-title">
+                            Let's Build Something <br />
+                            <span class="gradient-text">Amazing Together</span>
+                        </h2>
+
+                        <p class="contact-description">
+                            Ready to transform your ideas into reality? We are just a call away. Reach out to us directly for immediate assistance.
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-method-icon">
+                                    <i data-feather="phone"></i>
+                                </div>
+                                <div class="contact-method-info">
+                                    <span class="contact-method-label">CONTACT NUMBERS</span>
+                                    <a href="tel:+917356926820" class="contact-method-value">
+                                        +91 735-6926-820
+                                    </a>
+                                    <a href="tel:+918769803978" class="contact-method-value">
+                                        +91 876-980-3978
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-method-icon">
+                                    <i data-feather="mail"></i>
+                                </div>
+                                <div class="contact-method-info">
+                                    <span class="contact-method-label">EMAIL ADDRESS</span>
+                                    <a href="mailto:nu3ons@gmail.com" class="contact-method-value">
+                                        nu3ons@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Logo and Description -->
+                    <div class="footer-section">
+                        <a href="index.html" class="footer-logo">
+                            <div class="logo-icon"><img src="assets/nu3ons_logo.png" alt="Logo" class="logo" /></div>
+                            <span class="logo-text">nu3ons</span>
+                        </a>
+                        <p class="footer-description">
+                            Digital transformation agency helping businesses scale through innovative web solutions.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="projects.html">Work</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer-section">
+                        <h4 class="footer-title">Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">App Development</a></li>
+                            <li><a href="#">Automation</a></li>
+                            <li><a href="#">Consulting</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="footer-section">
+                        <h4 class="footer-title">Contact</h4>
+                        <ul class="footer-contact">
+                            <li>
+                                <a href="tel:+917356926820">+91 735-6926-820</a>
+                            </li>
+                            <li>
+                                <a href="tel:+918769803978">+91 876-980-3978</a>
+                            </li>
+                            <li>
+                                <a href="mailto:nu3ons@gmail.com">nu3ons@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="footer-bottom">
+                    <p>&copy; 2026 nu3ons. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
